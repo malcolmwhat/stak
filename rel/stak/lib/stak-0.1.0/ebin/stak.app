@@ -1,0 +1,10 @@
+{application,stak,
+             [{description,"stak"},
+              {vsn,"0.1.0"},
+              {modules,['Elixir.Stak','Elixir.Stak.Server',
+                        'Elixir.Stak.Stash','Elixir.Stak.SubSupervisor',
+                        'Elixir.Stak.Supervisor']},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {mod,{'Elixir.Stak',[]}},
+              {env,[{ini_stack,[]}]},
+              {registered,['Elixir.Stak.Server']}]}.
